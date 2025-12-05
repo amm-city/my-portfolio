@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aung Myint Myat</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">Aung's Profile</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><i class="bi bi-x-lg" onclick="closeMenu()"></i></li>
+            <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+            <li class="nav-item"><a href="#contact-me" class="nav-link">Contact Me</a></li>
+        </ul>
+        <i class="bi bi-list" onclick="openMenu()"></i>
+    </nav>
+
+    <section id="home" class="home-section">
+        <div class="section-content home-content">
+            <div class="text-group">
+                <h3>Hello, I'm Aung Myint Myat <br>Jr. Front-End Dev </h3>
+                <p class="about-me">I specialize in building website UIs and have been exploring different libraries. My current focus is on reinforcing my core skills with vanilla HTML, CSS, and JS. I am a fast and enthusiastic learner with a strong passion for programming, and I am keen to soak up as much knowledge as possible from senior team members.</p>
+                <div class="btn-group">
+                    <a href="#projects" class="btn btn-primary"><i class="bi bi-file-earmark-code"></i>Projects</a>
+                    <a href="https://github.com/amm-city" target="_blank" class="btn btn-primary cv-download"><i class="bi bi-github"></i>github</a>
+                    <a href="resources/Aung Myint Myat's CV (1).pdf" class="btn btn-primary cv-download" target="_blank"><i class="bi bi-cloud-arrow-down"></i>My CV</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/profile.jpg" alt="#" >
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content projects-content">
+            <h3 class="title">My Journey & Projects</h3>
+            <ul class="project-menu">
+                <li class="card project-card">
+                    <div class="preview-img"><img src="images/npta-preview.png" alt="npta-os"></div>
+                    <ul class="p-info">
+                        <li class="p-title">Mini Online Shop UI</li>
+                        <li class="p-lang">HTML, CSS, JS</li>
+                        <li class="p-desc">
+                            ဒီ project လေးကတော့ Practical Project လေးပဲဖစ်ပါတယ်။ Framework တွေကို မသုံးထားပဲနဲ့ Pure HTML, CSS, Js တို့ကိုသာအသုံးပြုရေးသားထားပြီး Responsive ဖစ်သော Single Page လေးဖြစ်ပါတယ်။ ဒီ Project လေးမှာတော့ user navigation ကောင်းမွန်စေရန် Navbar Fixed ပေးထားပြီး၊ section တိုင်းစီမှာ section-content အနေနဲ့ထည့်သွင်းရေးသားထာပါသည်(Fixed Position ကြောင့် section ရဲ့ content တွေဖုံးအုပ်မနေရန်)။ buttons, card Hover effect များအား သီးသန့်ခွဲထုပ်ရေးသားထားခြင်း၊ CSS grid and flex တို့ကိုစနစ်တကျရေးသားထည့်သွင်းထားခြင်း၊ Javascript တွင်လည်း scrollSpy ကို ထည့်သွင်းအသုံးပြုထားပြီး User Navigation ကောင်းမွန်အောင်ပြုလုပ်ထားခြင်း၊ Responsive အတွက် size,space များကို root ခွဲထုပ်ရေးသားထားခြင်း စသည်ဖြင့် ရိုးရှင်းသော Page Design လေးအဖြစ် ပြုလုပ်ဖန်တီးထားပါတယ်။ အသေးစိပ်ကိုတော့ Source Code ကို နိပ်၍ ကြည့်ရှု အကြံပေးနိုင်ပါတယ်ဗျ။
+                        </li>
+                        <li class="p-link">
+                            <div class="btn-group">
+                                <a href="https://minios-frontend-amm.netlify.app/" target="_blank" class="link btn btn-primary">Live View</a>
+                                <a href="https://github.com/amm-city/online-store-design" target="_blank" class="source-code btn btn-secondary">Source Code</a>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="languages">
+        <div class="section-content languages-content">
+            <h3 class="title">Languages & Frameworks</h3>
+            <ul class="lang-menu">
+                <li class="card">
+                    <img src="images/javascript.png" alt="lang" width="100">
+                    <h3 class="card-name">JS</h3>
+                </li>
+                <li class="card">
+                    <img src="images/php.png" alt="lang" width="100">
+                    <h3 class="card-name">PHP</h3>
+                </li>
+                <li class="card">
+                    <img src="images/bootstrap.png" alt="lang" width="100">
+                    <h3 class="card-name">Bootstrap</h3>
+                </li>
+                <li class="card">
+                    <img src="images/tailwind.png" alt="lang" width="100">
+                    <h3 class="card-name">Tailwind</h3>
+                </li>
+                <li class="card">
+                    <img src="images/laravel.png" alt="lang" width="100">
+                    <h3 class="card-name">Laravel</h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact-me">
+        <div class="section-content contact-content">
+            <h3 class="title">Contact Me</h3>
+            <ul class="contact-info card">
+                <li class="city"><i class="bi bi-geo-alt-fill"></i>Yangon</li>
+                <li class="email"><i class="bi bi-envelope-fill"></i>ammcoding@gmail.com</li>
+                <li class="social">
+                    <a href="https://t.me/ammcode2004" target="_blank" class="tele"><i class="bi bi-telegram"></i></a>
+                    <a href="viber://chat?number=+959767416492" target="_blank" class="viber"><i class="bi bi-telephone-fill"></i>Viber</a>
+                    <a href="https://www.facebook.com/aung.myint.myat.559793" class="fb" target="_blank"><i class="bi bi-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
