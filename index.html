@@ -16,6 +16,7 @@
             <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
             <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
             <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+            <li class="nav-item"><a href="#certi" class="nav-link">Certifications</a></li>
             <li class="nav-item"><a href="#contact-me" class="nav-link">Contact Me</a></li>
         </ul>
         <i class="bi bi-list" onclick="openMenu()"></i>
@@ -24,8 +25,8 @@
     <section id="home" class="home-section">
         <div class="section-content home-content">
             <div class="text-group">
-                <h3>Hello, I'm Aung Myint Myat <br>Jr. Front-End Dev </h3>
-                <p class="about-me">I specialize in building website UIs and have been exploring different libraries. My current focus is on reinforcing my core skills with vanilla HTML, CSS, and JS. I am a fast and enthusiastic learner with a strong passion for programming, and I am keen to soak up as much knowledge as possible from senior team members.</p>
+                <h3>Hello, I'm Aung Myint Myat</h3>
+                <p>A proactive <strong>Jr. Full Stack Developer</strong> who is egar to learn and explore emerging technoligies</p>
                 <div class="btn-group">
                     <a href="#projects" class="btn btn-primary"><i class="bi bi-file-earmark-code"></i>Projects</a>
                     <a href="https://github.com/amm-city" target="_blank" class="btn btn-primary cv-download"><i class="bi bi-github"></i>github</a>
@@ -69,32 +70,48 @@
             <ul class="lang-menu">
                 <li class="card">
                     <img src="images/javascript.png" alt="lang" width="100">
-                    <h3 class="card-name">JS</h3>
                 </li>
                 <li class="card">
                     <img src="images/php.png" alt="lang" width="100">
-                    <h3 class="card-name">PHP</h3>
                 </li>
                 <li class="card">
                     <img src="images/bootstrap.png" alt="lang" width="100">
-                    <h3 class="card-name">Bootstrap</h3>
                 </li>
                 <li class="card">
                     <img src="images/tailwind.png" alt="lang" width="100">
-                    <h3 class="card-name">Tailwind</h3>
                 </li>
                 <li class="card">
                     <img src="images/laravel.png" alt="lang" width="100">
-                    <h3 class="card-name">Laravel</h3>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section id="contact-me">
+    <section id="certi">
+        <div class="section-content certi-section">
+            <h2 class="title">Certifications</h2>
+            <div class="container">
+                <div class="certi-cards">
+                    <div class="image-card">
+                        <img src="images/Basic Certificate.png" alt="Image 1" class="gallery-image" data-fullsrc="images/Basic Certificate.png">
+                        <h2 class="certi-name">Programming Basic</h2>
+                    </div>
+                    <div class="image-card">
+                        <img src="images/Basic Certificate.png" alt="Image 1" class="gallery-image" data-fullsrc="images/Basic Certificate.png">
+                        <h2 class="certi-name">Professional Web Developer 1</h2>
+                    </div>
+                </div>
+                <div id="imageModal" class="modal">
+                    <span class="close-btn">&times;</span>
+                    <img class="modal-content" id="fullImage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-me" class="contact-section">
         <div class="section-content contact-content">
-            <h3 class="title">Contact Me</h3>
-            <ul class="contact-info card">
+            <ul class="contact-info">
                 <li class="city"><i class="bi bi-geo-alt-fill"></i>Yangon</li>
                 <li class="email"><i class="bi bi-envelope-fill"></i>ammcoding@gmail.com</li>
                 <li class="social">

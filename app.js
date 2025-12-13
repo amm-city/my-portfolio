@@ -33,3 +33,29 @@ function scrollSpy() {
 }
 document.addEventListener("scroll", scrollSpy);
 window.addEventListener("load", scrollSpy);
+
+// For Model
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('fullImage');
+const galleryImages = document.getElementsByClassName('gallery-image');
+const closeBtn = document.getElementsByClassName('close-btn')[0];
+
+for (let i = 0; i < galleryImages.length; i++) {
+  galleryImages[i].onclick = function() {
+    modal.style.display = "block";
+
+    const fullSrc = this.getAttribute('data-fullsrc') || this.src;
+    modalImg.src = fullSrc;
+    modalImg.alt = this.alt;
+  }
+}
+
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
