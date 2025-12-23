@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Programming Basic",
+        "img": "../images/pbCerti.webp"
+    },
+    {
+        "id": 2,
+        "name": "Professional Web Developer 1",
+        "img": "../images/pwd1Certi.webp"
+    }
+]

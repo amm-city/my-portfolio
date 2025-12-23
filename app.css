@@ -47,14 +47,14 @@
 }
 @media screen and (max-width: 360px) {
     :root {
-        --font-size-sm: 8px;
+        --font-size-sm: 9px;
         --font-size-base: 12px;
         --font-size-lg: 15px;
         --font-head-1: 25px;
         --font-head-2: 21px;
         --font-head-3: 16px;
 
-        --space--xxs: 1px;
+        --space--xxs: 3px;
         --space--xs: 5px;
         --space--sm: 12px;
         --space--md: 21px;
@@ -208,19 +208,19 @@ nav .nav-menu .nav-item .nav-link.active {
     gap: var(--space--sm);
 }
 .home-content .text-group h3 {
-    font-size: var(--font-head-3);
+    font-size: var(--font-head-1);
     color: var(--primary-color);
 }
 .home-content .text-group p {
     text-align: left;
     font-size: var(--font-size-base);
     line-height: 24px;
-    color: #e69744;
+    color: var(--primary-color);
 }
 .home-content .img {
     width: 300px;
     height: 300px;
-    border: 0.5rem solid #d194527e;
+    border: 0.3rem solid var(--primary-color);
     border-radius: var(--radius-round);
     overflow: hidden;
 }
@@ -228,12 +228,16 @@ nav .nav-menu .nav-item .nav-link.active {
     width: 100%;
     height: 100%;
     border-radius: var(--radius-round);
-    border: 0.3rem solid #332f36ab;
+    border: 0.2rem solid #fff;
     object-fit: cover;
 }
 .home-content .text-group .btn-group a {
     display: flex;
+    align-items: center;
     gap: var(--space--xs);
+}
+.home-content .text-group .btn-group a i {
+    font-size: var(--font-size-sm);
 }
 @media screen and (max-width: 850px) {
     .home-content {
@@ -273,7 +277,7 @@ nav .nav-menu .nav-item .nav-link.active {
         min-height: fit-content;
     }
     .home-section .text-group p {
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -281,26 +285,30 @@ nav .nav-menu .nav-item .nav-link.active {
 .project-menu {
     margin-top: var(--space--xl);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: var(--space--md);
 }
 .project-menu .project-card {
     margin: auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    gap: var(--space--xs);
 }
 .project-menu .project-card .preview-img {
     width: 100%;
-    height: 30%;
+    height: 50%;
 }
 .project-menu .project-card .preview-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    aspect-ratio: 2 / 1;
 }
 .project-card .p-info {
     width: 100%;
-    height: 70%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     gap: var(--space--xxs);
@@ -384,98 +392,35 @@ nav .nav-menu .nav-item .nav-link.active {
   object-fit: contain;
 }
 
-.modal {
-  display: none; 
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  max-height: 100%;
-  overflow: auto;
-  background-color: rgba(28, 28, 28, 0.466);
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 90%;
-  max-width: 900px;
-  margin-top: 50px;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-.close-btn {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 50px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-@keyframes zoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-}
-
 /* Contact Section */
-.contact-section {
-    min-height: 100vh;
+.contact-info {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: var(--space--xl) 8%;
+
 }
-@media screen and (min-height: 1000px){
-    .contact-section {
-        min-height: 50vh;
-        align-items: flex-start;
-    }
-}
-.contact-content .contact-info {
-    width: 90%;
-    height: 50%;
-    margin: auto;
-    text-align: center;
+.contact-info li {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: var(--space--xxs);
-}
-.contact-content .contact-info li {
-    display: flex;
-    gap: var(--space--xs);
-    justify-content: center;
-    font-size: var(--font-size-lg);
-    font-weight: 500;
-}
-.contact-content .contact-info li.social {
-    margin-top: var(--space--xs);
+    align-items: center;
     gap: var(--space--sm);
-    align-items: center;
+    font-size: var(--font-size-md);
 }
-.contact-content .contact-info li.social .viber {
-    background-color: #5f2382;
-    color: #fff;
-    padding: var(--space--xxs) var(--space--sm);
-    border-radius: 6px;
+.contact-info .social {
     display: flex;
-    gap: var(--space--xxs);
+    gap: var(--space--sm);
+    font-size: var(--font-head-2);
 }
-.contact-content .contact-info li.social .tele {
-    color: #26a0de;
-    font-size: var(--font-head-1);
+.contact-info .social a.tele {
+    color: #25a1df;
 }
-.contact-content .contact-info li.social .fb {
+.contact-info .social a.fb {
     color: #1773ef;
-    font-size: var(--font-head-1);
+}
+@media screen and (max-width: 590px) {
+    .contact-info {
+        flex-direction: column;
+        gap: var(--space--sm);
+        justify-content: center;
+    }
 }

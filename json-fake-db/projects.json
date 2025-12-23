@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Online Shop UI",
+        "languages": "HTML, CSS, JavaScript",
+        "description": "ဒီ project လေးကတော့ Practical Project လေးပဲဖစ်ပါတယ်။ Framework တွေကို မသုံးထားပဲနဲ့ Pure HTML, CSS, Js တို့ကိုသာအသုံးပြုရေးသားထားပြီး Responsive ဖစ်သော Single Page လေးဖြစ်ပါတယ်။ ဒီ Project လေးမှာတော့ user navigation ကောင်းမွန်စေရန် Navbar Fixed ပေးထားပြီး၊ section တိုင်းစီမှာ section-content အနေနဲ့ထည့်သွင်းရေးသားထာပါသည်(Fixed Position ကြောင့် section ရဲ့ content တွေဖုံးအုပ်မနေရန်)။ buttons, card Hover effect များအား သီးသန့်ခွဲထုပ်ရေးသားထားခြင်း၊ CSS grid and flex တို့ကိုစနစ်တကျရေးသားထည့်သွင်းထားခြင်း၊ Javascript တွင်လည်း scrollSpy ကို ထည့်သွင်းအသုံးပြုထားပြီး User Navigation ကောင်းမွန်အောင်ပြုလုပ်ထားခြင်း၊ Responsive အတွက် size,space များကို root ခွဲထုပ်ရေးသားထားခြင်း စသည်ဖြင့် ရိုးရှင်းသော Page Design လေးအဖြစ် ပြုလုပ်ဖန်တီးထားပါတယ်။ အသေးစိပ်ကိုတော့ Source Code ကို နိပ်၍ ကြည့်ရှု အကြံပေးနိုင်ပါတယ်ဗျ။",
+        "img": "images/npta-preview.webp",
+        "type": "Live View",
+        "link": "https://minios-frontend-amm.netlify.app/",
+        "git": "https://github.com/amm-city/online-store-design"
+    },
+    {
+        "id": 2,
+        "name": "Simple class management dashboard",
+        "languages": "Laravel ( Laravel/Breeze ) ",
+        "description": "ဒီ project လေးကတော့ Basic CRUD and Database relationships ORM ကို လေ့လာရင်း ဖန်တီးဖစ်ခဲ့တာပါ။ UI အနေနဲ့ Laravel/Breeze ကိုအသုံးပြုထားပြီးတော့ UI Design ကိုပြုပြင်ရလွယ်ကူစေရန် Blade Components များစွာကို ထပ်မံထည့်သွင်းအသုံးပြုထားပါတယ်။ MVC အတိုင်း စနစ်တကျရေးသားထားပြီး Controller Logic များကို ရှင်းလင်းစွာရေးသားထားပါတယ်။ Features အများကြီး မပါဝင်ပေမဲ့ အခြေခံ Live Search (fetch api ) ကို သုံးထားပါတယ်။ N+1 Query ကို ကာကွယ်ရန် Egar Loading အသုံးပြုထားသည့်အပြင် လိုအပ်ဒေတာများကို သာ select ဖြင့်ပြန်လည်ဆွဲထုပ်ထားပါသည်။ အသေးစိပ်ကို တော့ Source Code ကို နှိပ်၍ကြည့်ရှုပြီး အကြံပြုနိုင်ပါတယ်ဗျ။",
+        "img": "images/basic-class-management.webp",
+        "type": "Demo video",
+        "link": "https://t.me/c/3632240929/3",
+        "git": "https://github.com/amm-city/basic-class-management.git"
+    }
+]
